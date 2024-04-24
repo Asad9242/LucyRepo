@@ -78,7 +78,7 @@ public class Mytask1 {
 		
 		WebElement searchMD = driver.findElementByName("Search Medication");
 		searchMD.click();
-		searchMD.sendKeys("AB");
+		searchMD.sendKeys("ABc");
 		
 		WebElement MD = driver.findElementByName("ALTRIABAK 0,25 MG/ML COLLY 5 ML");
 		MD.click();
