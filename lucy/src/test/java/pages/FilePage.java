@@ -5,12 +5,15 @@ import org.openqa.selenium.WebDriver;
 
 import io.appium.java_client.windows.WindowsDriver;
 
-public class File {
+public class FilePage {
 
-	WindowsDriver driver = null;
+	WindowsDriver driver;
 	By edit = By.name("More Info");
 	
-	
+	public FilePage(WindowsDriver driver)
+	{
+		this.driver = driver;
+	}
 	public void MoreInfo() {
 	
 		driver.findElement(edit).click();

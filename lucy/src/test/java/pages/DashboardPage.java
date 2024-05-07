@@ -7,16 +7,16 @@ import org.openqa.selenium.WebDriver;
 
 import io.appium.java_client.windows.WindowsDriver;
 
-public class Dashboard {
+public class DashboardPage {
 
-	WindowsDriver driver = null;
+	WindowsDriver driver;
 	By billingMenu = By.name("Billing");
 	By SearchBar = By.name("Search");
 	By patient = By.name("DoeJohn");
 	
 	
 	
-	public void Dashbaord(WindowsDriver driver)
+	public DashboardPage(WindowsDriver driver)
 	{
 		this.driver = driver;
 	}
@@ -28,10 +28,10 @@ public class Dashboard {
 	}
 	
 	public void enterTextInSearchBar(String patientName){
-		 driver.findElement(SearchBar).sendKeys("patientName");
+		 driver.findElement(SearchBar).sendKeys(patientName);
 	}
 	
-	public void clickOnPatient()
+	public void clickMoreInfo()
 	{
 		 driver.findElement(patient).click();
 	}

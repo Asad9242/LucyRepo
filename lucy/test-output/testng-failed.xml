@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_cases.Update_patient_tests">
+      <class name="test_cases.tests">
         <methods>
-          <include name="stepup"/>
-          <include name="editPatient"/>
+          <include name="fillPatientInfo"/>
+          <include name="Login"/>
+          <include name="addMedication"/>
         </methods>
-      </class> <!-- test_cases.Update_patient_tests -->
+      </class> <!-- test_cases.tests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

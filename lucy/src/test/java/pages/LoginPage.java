@@ -9,7 +9,7 @@ import io.appium.java_client.windows.WindowsDriver;
 
 public class LoginPage {
 
-	WindowsDriver driver = null;
+	WindowsDriver driver;
 	By email_field = By.name("Username");
 	By pass_field = By.name("Password");
 	By button_login = By.name("Login");
